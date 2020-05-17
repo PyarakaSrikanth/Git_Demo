@@ -1,0 +1,64 @@
+GitHUB 
+
+First Signup in github.com withyour 
+email id 
+
+Install gitforwindows.org
+
+git bash app
+
+open that git bash 
+
+---
+pwd 
+## Present working directory 
+
+#To demo: 
+
+##Created folder on Desktop 
+#git_demo --> Test.txt 
+
+##First I need to set configuration 
+
+git config --global user.name "yourname"
+
+enter 
+
+git config --global user.email "emailid"
+
+
+## Init --> Add --> Commit --> Push it
+
+
+### Step 1 : Make sure get into that folder
+pwd
+
+### Step 2 : Initialize it 
+
+git init
+
+--> You should see .git folder in pwd
+
+git add "filename"
+or
+git add .
+
+git status 
+
+--> Commit
+
+git commit -m "Initial commit"
+
+--> Go to Github Create repository 
+
+git remote add origin https://github.com/<username>/<repname>.git
+git push -u origin master
+
+
+
+
+
+
+
+
+
