@@ -56,6 +56,21 @@ during the next iteration using **Backward Propagation, the error will be reduce
 ![lrvsloss](./images/LRvsloss.png)
 
 
+
+![lreffect](./images/lreffect.png)
+
+* The learning rate is the most important hyper-parameter for tuning neural networks. A good learning rate could be the difference between a model that doesn’t learn anything and a model that presents state-of-the-art results.
+
+
+### Implementation of Backpropagation using excel
+
+![bpimp](./images/excelss.png)
+
+* [BackPropagation.xlsx](BackPropagation.xlsx) - Please refer excel for more detailed implementation of backpropagation
+
+
+
+
 # Usage
 
 ```
