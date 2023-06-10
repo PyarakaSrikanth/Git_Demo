@@ -31,9 +31,29 @@ during the next iteration using **Backward Propagation, the error will be reduce
 
 ![SimpleNNW](.//images//nn_weights.png)
 
+* i1 and i2 are inputs
+* w1,w2,w3,w4 are weights associated with inputs i1 and i2
+* h1,h2 are hidden layer neurons
+* a_h1,a_h2 - sigmoid function applied on h1 and h2
+* w5,w6,w7,w8 are weights associated with hidden layer h1 and h2
+* o1,o2 are output with a_o1 and a_o2 are applied activation function
+* E1,E2 are error/loss function `E1 = 1/2*(t1-a_o1)^2` and `E2 = 1/2*(t2-a_o2)^2`
 
+### Backpropagation calculation
 
+![bpc](./images/Pd.png)
 
+* **Partial Derivatives** form basis for Backward Propagation `d(f(x)/d(x) - Change in f(x) with respect to x`
+* In order to minimize the difference between our neural network's output and the target output, we need to know how the model performance changes with respect to each parameter in our model. In other words, we need to define the relationship (read: partial derivative) between our cost function and each weight. We can then update these weights in an iterative process using gradient descent.
+* It uses chain rule to calculate re calibrate weights.
+* Block 1 Formula is to calculate Forward Propagation
+* Block 2,3,4,5,6 formula are used for backward propagation.
+* weights are recalibrated using - ` re-calibrated weights = existing weight - (learning rate) * partial derivative of loss function/partial derivative of specific weight`
+* Learning rate plays vital role in learning process.
+
+### Effect of Learning rate on loss function
+
+![lrvsloss](./images/LRvsloss.png)
 
 
 # Usage
